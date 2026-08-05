@@ -1,79 +1,72 @@
 # IPv4 Subnet Calculator
 
-> PowerShell-based IPv4 Subnet Calculator
+> Third Year CyberOps Assignment
 
-This repository contains a PowerShell implementation of an IPv4 Subnet Calculator.
+This repository contains my third-year CyberOps assignment on developing an IPv4 Subnet Calculator using Windows PowerShell.
 
-The project accepts an IPv4 address and CIDR notation as input and calculates essential subnetting information using PowerShell.
+The project demonstrates how PowerShell can be used to automate subnet calculations by accepting an IPv4 address and CIDR notation as input and generating essential subnetting information.
 
 ## Repository Structure
 
-```
-.
-├── SubnetCalculator.ps1
-└── README.md
-```
-
----
-
-## Project Contents
-
-The repository includes:
-
-- PowerShell implementation of an IPv4 Subnet Calculator
-- Project documentation
-- Setup instructions
-- PowerShell execution policy configuration
-- Sample input and output
-
----
-
-## Running the Project
-
-Navigate to the project directory:
-
-```powershell
-cd C:\Users\<username>\Desktop\Subnet-Calculator
-```
-
-Execute the script:
-
-```powershell
-.\SubnetCalculator.ps1
-```
-
-If PowerShell blocks script execution, enable local script execution by running:
-
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-```
-
-Verify the execution policy:
-
-```powershell
-Get-ExecutionPolicy
-```
-
-Expected output:
-
 ```text
-RemoteSigned
+.
+├── Screenshots/
+├── INSTRUCTIONS.md
+├── IPv4_Subnet_Calculator_Writeup.pdf
+├── README.md
+└── SubnetCalculator.ps1
 ```
+
+### SubnetCalculator.ps1
+
+The main PowerShell implementation of the IPv4 Subnet Calculator.
+
+The script performs:
+
+- Subnet Mask Calculation
+- Network Address Calculation
+- Broadcast Address Calculation
+- First Host Address Calculation
+- Last Host Address Calculation
+- Total Usable Hosts Calculation
 
 ---
 
-## Sample Output
+### INSTRUCTIONS.md
 
-```
-IP Address        : 192.168.206.126
-CIDR              : /24
-Subnet Mask       : 255.255.255.0
-Network Address   : 192.168.206.0
-Broadcast Address : 192.168.206.255
-First Host        : 192.168.206.1
-Last Host         : 192.168.206.254
-Usable Hosts      : 254
-```
+Contains the complete setup and execution guide.
+
+Contents include:
+
+- System Requirements
+- PowerShell Execution Policy Setup
+- Running the Script
+- Sample Input
+- Sample Output
+- Troubleshooting
+
+➡ Open **INSTRUCTIONS.md**
+
+---
+
+### IPv4_Subnet_Calculator_Writeup.pdf
+
+Contains the complete CyberOps assignment documentation.
+
+The document includes:
+
+- Objective
+- Introduction
+- Procedure
+- Execution Policy Configuration
+- Results
+- Conclusion
+
+---
+
+### Screenshots
+
+Contains execution screenshots demonstrating the working of the PowerShell subnet calculator.
 
 ---
 
